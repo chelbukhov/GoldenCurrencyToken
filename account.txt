@@ -1,0 +1,9 @@
+развернут в реальной сети от
+0x94e24b85E7c833Ba5301a4BaF261e925F095fb44
+
+адрес контракта:
+0xeDc8C33D811eD9628472A6555e41782F3d8B389f
+https://etherscan.io/address/0xedc8c33d811ed9628472a6555e41782f3d8b389f
+
+адрес токена:
+https://etherscan.io/token/0x8a822d790d6a2fc21902c7d9736941ab6a9b0f6d

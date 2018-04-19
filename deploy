@@ -1,0 +1,38 @@
+CrowdSale
+0xf3191EA1c65590A3f43F81f2571D20EE90473d40
+
+token
+https://rinkeby.etherscan.io/token/0xd1646ea235d1376f95eb5246a29d1668249bef84
+
+
+v4
+0x637c2ad18e215ab4c82a5df6530adc73b3065a69
+GoldenCurrency-v4.sol
+
+v5 (internal some standard functions)
+0xb9E7282585F097Ee41ca5d55bfc0C16d8652fBCd
+GoldenCurrency-v5.sol
+
+v6 - осталась без депло€
+
+v7 - контракт разделен на 2 - Crowdsale и token
+CrowdSale 	- 0x9b00ED974CBE598504F8d998Ca3137a320D29A9F
+Token		- 0x0837733887191a0cfab49f94d159b12425d71877
+
+v8 
+- удалена ф-и€ userTransferToken
+-ѕеременна€ ProfitOwner сделана публичной
+-Ўтатна€ ф-и€ transfer,изменена, добавлено условие
+if (balances[msg.sender] >= 1 ether){
+        require(_value >= 1 ether);     // minimun one token to transfer
+    } else {
+        require(_value == balances[msg.sender]); //only all rest
+    }
+- омментарии лишние все убраны, нужные переведены на английский
+
+CrowdSale 	- 0xf0a3c41449e9d0078c0457fbff8888c099613c39
+Token		- 0x4da2d9f217cdb2e3eed5731907a51eef11f1f5b1
+
+  function() external payable {
+	profitOwner.transfer(msg.value);
+  } 
